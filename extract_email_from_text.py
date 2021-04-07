@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 #
 # Extracts email addresses from one or more plain text files.
 #
@@ -14,7 +15,7 @@ import os.path
 import time
 import re
 # run this code
-# python extract_email_from_text.py email_comment.txt | sort | uniq > prokashok_email.csv       
+# python extract_email_from_text.py email_comment.txt | sort | uniq > prokashok_email.csv
 
 #removed the ' from re.compile string, otherwise it adds the ' to the email
 #regex = re.compile(("([a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`"
