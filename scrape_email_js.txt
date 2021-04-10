@@ -1,0 +1,11 @@
+
+
+text = document.getElementById("printable_area").innerText
+text = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi)
+for (i = 0; i < text.length; i++) {
+    console.log(text[i]);
+  }
+
+
+here "printable_area" is the div we want to find email id
+<!-- js regex code to scrape email from web -->
