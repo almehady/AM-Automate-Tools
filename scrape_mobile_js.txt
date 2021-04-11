@@ -1,0 +1,11 @@
+
+
+var regex = /((\(\d{5}\) ?)|(\d{5}-))?\d{5}-\d{6}(?!([^<]*>)|(((?!<a).)*<\/a>))|((\(\d{5}\) ?)|(\d{5}-))?\d{5}\d{6}(?!([^<]*>)|(((?!<a).)*<\/a>))/g; 
+text = document.getElementById("search_details").innerText
+text = text.match(regex)
+for (i = 0; i < text.length; i++) {
+    console.log(text[i]);
+  }
+
+
+<!-- js regex code to scrape Bangladeshi mobile numner from web -->
