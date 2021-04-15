@@ -1,7 +1,7 @@
 
 
 var regex = /((\(\d{5}\) ?)|(\d{5}-))?\d{5}-\d{6}(?!([^<]*>)|(((?!<a).)*<\/a>))|((\(\d{5}\) ?)|(\d{5}-))?\d{5}\d{6}(?!([^<]*>)|(((?!<a).)*<\/a>))/g; 
-text = document.getElementById("search_details").innerText
+text = document.getElementById("datagrid").innerText
 text = text.match(regex)
 for (i = 0; i < text.length; i++) {
     console.log(text[i]);
@@ -9,3 +9,10 @@ for (i = 0; i < text.length; i++) {
 
 
 <!-- js regex code to scrape Bangladeshi mobile numner from web -->
+
+var regex = /([0-9]{5}[0-9]{6})\w+/g;
+text = document.getElementsByClassName("main-wrapper")[0].innerHTML
+text = text.match(regex)
+for (i = 0; i < text.length; i++) {
+    console.log(text[i]);
+  }
