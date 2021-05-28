@@ -40,3 +40,11 @@ Extract email from website
 In the browser console run the code, in console it will output the extracted email.
 
 ![scrape email from website](image/scrape_email_web.png)
+
+
+## Split large xls file into smaller files
+
+With this script using pandas and numpy we can slipt large xls file into smaller chunk.
+Before run the script update chunksize, your file name and directory as per your requirement.
+
+[Split xls file](split_xl.py)
